@@ -1,0 +1,15 @@
+{"decision_time":"2026-03-15T08:00:00Z","shipment_id":"s-demo-stable"}
+{"decision_time":"2026-03-15T14:00:00Z","shipment_id":"s-demo-stable"}
+{"decision_time":"2026-03-15T20:00:00Z","shipment_id":"s-demo-stable"}
+{"decision_time":"2026-03-15T08:00:00Z","shipment_id":"s-demo-warming"}
+{"decision_time":"2026-03-15T14:00:00Z","shipment_id":"s-demo-warming"}
+{"decision_time":"2026-03-15T20:00:00Z","shipment_id":"s-demo-warming"}
+{"decision_time":"2026-03-15T08:00:00Z","shipment_id":"s-demo-correction"}
+{"decision_time":"2026-03-15T14:00:00Z","shipment_id":"s-demo-correction"}
+{"decision_time":"2026-03-15T20:00:00Z","shipment_id":"s-demo-correction"}
+{"decision_time":"2026-03-15T08:00:00Z","shipment_id":"s-demo-door"}
+{"decision_time":"2026-03-15T14:00:00Z","shipment_id":"s-demo-door"}
+{"decision_time":"2026-03-15T20:00:00Z","shipment_id":"s-demo-door"}
+{"decision_time":"2026-03-15T08:00:00Z","shipment_id":"s-demo-delayed"}
+{"decision_time":"2026-03-15T14:00:00Z","shipment_id":"s-demo-delayed"}
+{"decision_time":"2026-03-15T20:00:00Z","shipment_id":"s-demo-delayed"}

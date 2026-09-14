@@ -1,0 +1,28 @@
+.venv/
+**/__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Generated model output (created by train() or the notebook)
+artifact/
+notebook_artifact/
+walkthrough_artifact/
+
+# Generated datasets (run tools/generate_dataset.py; demo data under optional/)
+data/*.jsonl
+data/MANIFEST.json
+optional/data/
+
+# nbconvert execution artifacts
+notebooks/*.executed.ipynb
+
+# Local IDE / agent folders
+.agents/
+.claude/
+
+# OS
+.DS_Store

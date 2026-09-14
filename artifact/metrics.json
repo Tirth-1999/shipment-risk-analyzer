@@ -1,0 +1,42 @@
+{
+  "baseline_brier_score": 0.07407841435185183,
+  "baseline_pr_auc": 0.08055555555555556,
+  "brier_score": 0.007136249342965812,
+  "evaluation_split": "80/20 by first decision time (later shipments held out)",
+  "model_comparison": {
+    "hgb": {
+      "baseline_brier_score": 0.07407841435185183,
+      "baseline_pr_auc": 0.08055555555555556,
+      "brier_score": 0.007877875073355214,
+      "pr_auc": 0.971943584142171
+    },
+    "logreg": {
+      "baseline_brier_score": 0.07407841435185183,
+      "baseline_pr_auc": 0.08055555555555556,
+      "brier_score": 0.007136249342965812,
+      "pr_auc": 0.9794900962665725
+    }
+  },
+  "pr_auc": 0.9794900962665725,
+  "selected_model": "logreg",
+  "slices": [
+    {
+      "baseline_brier_score": 0.005941840277777783,
+      "baseline_pr_auc": 0.0,
+      "brier_score": 5.4805969242123875e-06,
+      "name": "early_window",
+      "pr_auc": 0.0,
+      "rows": 133
+    },
+    {
+      "baseline_brier_score": 0.11399984321463535,
+      "baseline_pr_auc": 0.1277533039647577,
+      "brier_score": 0.011314188740426308,
+      "name": "late_window",
+      "pr_auc": 0.9797633203102881,
+      "rows": 227
+    }
+  ],
+  "test_rows": 360,
+  "train_rows": 1440
+}

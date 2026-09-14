@@ -1,0 +1,55 @@
+{
+  "decision_times": 15,
+  "events": 146,
+  "labels": 4,
+  "purpose": "Five demo shipments for inference (not used in training)",
+  "seed": 4242,
+  "shipment_count": 5,
+  "shipments": [
+    {
+      "decision_times": 3,
+      "events": 29,
+      "has_incident": false,
+      "shipment_id": "s-demo-stable",
+      "talk_about": "Steady 3-4 C with duplicate deliveries. Repeats are ignored by event_id and revision.",
+      "use_case": "Stable cold chain"
+    },
+    {
+      "decision_times": 3,
+      "events": 26,
+      "has_incident": true,
+      "incident_at": "2026-03-15T19:00:00Z",
+      "shipment_id": "s-demo-warming",
+      "talk_about": "Temperature drifts up. Incident within 6 hours at the 14:00 score.",
+      "use_case": "Gradual warming"
+    },
+    {
+      "decision_times": 3,
+      "events": 29,
+      "has_incident": true,
+      "incident_at": "2026-03-15T20:00:00Z",
+      "shipment_id": "s-demo-correction",
+      "talk_about": "Correction arrives at hour 22 but score at hour 8 must stay the same.",
+      "use_case": "Late correction"
+    },
+    {
+      "decision_times": 3,
+      "events": 35,
+      "has_incident": true,
+      "incident_at": "2026-03-15T17:00:00Z",
+      "shipment_id": "s-demo-door",
+      "talk_about": "6 door-open events and warming. door_open_seen raises the score.",
+      "use_case": "Door open event"
+    },
+    {
+      "decision_times": 3,
+      "events": 27,
+      "has_incident": true,
+      "incident_at": "2026-03-15T18:00:00Z",
+      "shipment_id": "s-demo-delayed",
+      "talk_about": "Readings from hour 15+ arrive 3 hours late. Only received_at counts when scoring.",
+      "use_case": "Delayed telemetry"
+    }
+  ],
+  "stream_hours": 24
+}

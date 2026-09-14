@@ -1,0 +1,4 @@
+{"incident_at":"2026-03-15T19:00:00Z","incident_id":"inc-s-demo-warming","label_available_at":"2026-03-16T07:00:00Z","severity":2,"shipment_id":"s-demo-warming"}
+{"incident_at":"2026-03-15T20:00:00Z","incident_id":"inc-s-demo-correction","label_available_at":"2026-03-16T08:00:00Z","severity":2,"shipment_id":"s-demo-correction"}
+{"incident_at":"2026-03-15T17:00:00Z","incident_id":"inc-s-demo-door","label_available_at":"2026-03-16T05:00:00Z","severity":2,"shipment_id":"s-demo-door"}
+{"incident_at":"2026-03-15T18:00:00Z","incident_id":"inc-s-demo-delayed","label_available_at":"2026-03-16T06:00:00Z","severity":2,"shipment_id":"s-demo-delayed"}
