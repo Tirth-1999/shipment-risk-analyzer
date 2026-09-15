@@ -81,6 +81,13 @@ def events_for_shipment(events: list["TelemetryEvent"], shipment_id: str) -> lis
     return [event for event in events if event.shipment_id == shipment_id]
 
 
+def decisions_for_shipment(
+    decision_times: Sequence[tuple[str, datetime]], shipment_id: str
+) -> list[tuple[str, datetime]]:
+    """Keep decision times for one shipment."""
+    return [(sid, as_of) for sid, as_of in decision_times if sid == shipment_id]
+
+
 def incident_time_for_shipment(labels: list[dict[str, object]], shipment_id: str) -> datetime | None:
     """Return incident_at for a shipment, or None if there is no label."""
     for label in labels:
@@ -1353,7 +1360,7 @@ def demo_late_correction(
     from dispatch_risk.solution import RiskEngine
 
     events = events_for_shipment(load_events(data_dir), shipment_id)
-    decisions = [(sid, t) for sid, t in load_decision_times(data_dir) if sid == shipment_id]
+    decisions = decisions_for_shipment(load_decision_times(data_dir), shipment_id)
     correction = next((e for e in events if e.revision > 1), None)
     if correction is None:
         raise ValueError(f"{shipment_id} has no late correction event (revision > 1)")

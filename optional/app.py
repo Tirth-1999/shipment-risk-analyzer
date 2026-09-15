@@ -29,6 +29,7 @@ sys.path[:0] = [str(ROOT / "src"), str(OPTIONAL_DIR)]
 from dispatch_risk.solution import RiskEngine, build_training_rows, train  # noqa: E402
 from demo_helpers import (  # noqa: E402
     WALKTHROUGH_DIR,
+    decisions_for_shipment,
     events_for_shipment,
     holdout_evaluation,
     incident_time_for_shipment,
@@ -254,7 +255,7 @@ def _load_shipment(shipment_id: str) -> dict:
     decisions = load_decision_times(WALKTHROUGH_DIR)
     return {
         "events": events_for_shipment(events, shipment_id),
-        "decisions": [(sid, t) for sid, t in decisions if sid == shipment_id],
+        "decisions": decisions_for_shipment(decisions, shipment_id),
         "incident_at": incident_time_for_shipment(labels, shipment_id),
         "shipment_id": shipment_id,
     }
